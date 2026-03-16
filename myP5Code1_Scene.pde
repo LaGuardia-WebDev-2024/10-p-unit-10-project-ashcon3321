@@ -1,11 +1,12 @@
-var bakeryLabels = ["Crossiants","Baguettes"];
+var bakeryLabels = ["Crossiants","Baguettes","Loafs"];
 
 setup = function() {
 
   size(400, 400); 
   background(0,0,0,0);
 
-  var crossiantX = 60;
+//crossiant
+  var crossiantX = 50;
   textSize(30);
 
   while(crossiantX < 300){
@@ -16,6 +17,16 @@ setup = function() {
   textSize(15);
   text(bakeryLabels[0], 70, 105);
   text(bakeryLabels[1], 70, 185);
+  text(bakeryLabels[2], 70, 260);
+
+//baguette 
+  var baguetteX = 50;
+  textSize(30);
+
+  while(baguetteX < 300){
+    text("🥖", baguetteX, 160);
+    baguetteX +=40;
+  }
 }
 
 draw = function(){   

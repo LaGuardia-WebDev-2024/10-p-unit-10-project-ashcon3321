@@ -27,9 +27,22 @@ setup = function() {
     text("🥖", baguetteX, 160);
     baguetteX +=40;
   }
+
+  //loafs 
+  var baguetteX = 50;
+  textSize(30);
+
+  while(baguetteX < 300){
+    text("🍞", baguetteX, 240);
+    baguetteX +=40;
+  }
 }
 
-draw = function(){   
+draw = function(){ 
+
+  if(mousePressed){
+    text("🥪", random(0,600), random(0,400));
+  }  
 
 }
 
